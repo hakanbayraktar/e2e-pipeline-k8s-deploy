@@ -39,7 +39,7 @@ pipeline{
                    git add deployment.yaml
                    git commit -m "Updated Deployment Manifes"
                 """
-                withCredentials([gitUsernamePassword(credentialsId: 'github-pat',gitToolName:'Default')]) {
+                withCredentials([gitUsernamePassword(credentialsId: 'github',gitToolName:'Default')]) {
                     sh "git push https://github.com/hakanbayraktar/e2e-pipeline-k8s-deploy main"
                 } 
             }
