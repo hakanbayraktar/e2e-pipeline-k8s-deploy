@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hbayraktar-deamon
-        image: hbayraktar/e2e-pipeline:latest
+        image: hbayraktar/e2e-pipeline:1.0.0-15
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
