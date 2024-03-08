@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hbayraktar-deamon
+spec:
+  selector:
+    matchLabels:
+      app: hbayraktar-deamon
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hbayraktar-deamon
+    spec:
+      containers:
+      - name: hbayraktar-deamon
+        image: hbayraktar/e2e-pipeline:1.0.0-15
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+
