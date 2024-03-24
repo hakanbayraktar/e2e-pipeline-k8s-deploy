@@ -4,10 +4,9 @@ This Jenkins project provides the ability to automatically deploy to Kubernetes 
 # Technical Features:
 
 **Automatic Updates:** Deployment manifest is automatically updated with the latest image tags.     
-
-**Repeatability:** Every deployment process is performed in a consistent and repeatable manner.     
-**Error Reduction:** Reduces the risk of errors by minimizing the need for manual intervention.
-**Efficiency: **Speeds up the deployment process and saves time.
+**Repeatability:** Every deployment process is performed in a consistent and repeatable manner.   
+**Error Reduction:** Reduces the risk of errors by minimizing the need for manual intervention.   
+**Efficiency: **Speeds up the deployment process and saves time.  
 **Use Cases:**
 
 As part of Continuous Integration/Continuous Delivery (CI/CD) workflows
@@ -19,13 +18,13 @@ To prevent manual deployment errors and delays
 **Set up the project in Jenkins:** Create a pipeline script for this project in Jenkins and make necessary configurations.
 Set up required environment variables: Define environment variables containing your application's name and the latest image tag.
 Run the Jenkins pipeline: Trigger the pipeline in Jenkins and wait for the automated deployment process to complete.
-Pipeline Stages:
+# Pipeline Stages:
 
-**Cleanup Workspace:** Cleans up any existing artifacts and prepares the environment for a new deployment.
-**Checkout from SCM:** Retrieves the deployment manifest from an SCM like GitHub.
-**Update Deployment Tags:** Updates the deployment manifest with the latest image tags.
-**Patch the Changed Deployment File to Git:** Pushes the updated deployment manifest back to the Git repository.
-**Deploy to Kubernetes:** Uses the Kubernetes API to automatically apply the deployment to a Kubernetes cluster.
+**Cleanup Workspace:** Cleans up any existing artifacts and prepares the environment for a new deployment.  
+**Checkout from SCM:** Retrieves the deployment manifest from an SCM like GitHub.   
+**Update Deployment Tags:** Updates the deployment manifest with the latest image tags.   
+**Patch the Changed Deployment File to Git:** Pushes the updated deployment manifest back to the Git repository.   
+**Deploy to Kubernetes:** Uses the Kubernetes API to automatically apply the deployment to a Kubernetes cluster.   
 
 # Notes:
 
