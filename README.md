@@ -6,7 +6,7 @@ This Jenkins project provides the ability to automatically deploy to Kubernetes 
 **Automatic Updates:** Deployment manifest is automatically updated with the latest image tags.     
 **Repeatability:** Every deployment process is performed in a consistent and repeatable manner.   
 **Error Reduction:** Reduces the risk of errors by minimizing the need for manual intervention.   
-**Efficiency: **Speeds up the deployment process and saves time.  
+**Efficiency:** Speeds up the deployment process and saves time.  
 **Use Cases:**
 
 As part of Continuous Integration/Continuous Delivery (CI/CD) workflows
